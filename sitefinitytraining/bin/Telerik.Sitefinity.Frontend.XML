@@ -2874,6 +2874,12 @@
             </summary>
             <value>Select events</value>
         </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Mvc.StringResources.ClientComponentsResources.InvalidUrlMessage">
+            <summary>
+            The entered URL is invalid.
+            </summary>
+            <value>The entered URL is invalid.</value>
+        </member>
         <member name="T:Telerik.Sitefinity.Frontend.Mvc.StringResources.PersonalizationDesignerResources">
             <summary>
             Localizable strings for the Personalization's designer.
@@ -3153,12 +3159,14 @@
             This class contains helper methods for registering client resources.
             </summary>
         </member>
-        <member name="M:Telerik.Sitefinity.Frontend.Mvc.Helpers.ResourceHelper.Script(System.Web.Mvc.HtmlHelper,System.String)">
+        <member name="M:Telerik.Sitefinity.Frontend.Mvc.Helpers.ResourceHelper.Script(System.Web.Mvc.HtmlHelper,System.String,System.Boolean)">
             <summary>
             Registers JavaScript reference and ensures that it loads maximum once for a page.
             </summary>
             <param name="helper">The helper.</param>
             <param name="scriptPath">The path to the JavaScript file.</param>
+            <param name="tryUseScriptManager">Indicates whether to use script manager(if exists) when register JavaScript reference. 
+            If it is used the script will always be loaded on the top section of the page.</param>
             <returns>
             MvcHtmlString
             </returns>
@@ -3167,22 +3175,8 @@
             In case you want to use embedded scripts from Sitefinity check <see cref="!:ResourceHelper.Script(this HtmlHelper helper, ScriptRef scriptReference, bool throwException = false)"/>.
             </remarks>
         </member>
-        <member name="M:Telerik.Sitefinity.Frontend.Mvc.Helpers.ResourceHelper.Script(System.Web.Mvc.HtmlHelper,System.String,System.String)">
-            <summary>
-            Registers JavaScript reference and ensures that it loads maximum once for a page.
-            </summary>
-            <param name="helper">The helper.</param>
-            <param name="scriptPath">The path to the JavaScript file.</param>
-            <param name="sectionName">The name of the section that will render this script. If null it will render on the same place of the page</param>
-            <returns>
-            MvcHtmlString
-            </returns>
-            <remarks>
-            This method uses directly the resource from the <see cref="!:scriptPath"/>.
-            In case you want to use embedded scripts from Sitefinity check <see cref="!:ResourceHelper.Script(this HtmlHelper helper, ScriptRef scriptReference, bool throwException = false)"/>.
-            </remarks>
-        </member>
-        <member name="M:Telerik.Sitefinity.Frontend.Mvc.Helpers.ResourceHelper.Script(System.Web.Mvc.HtmlHelper,System.String,System.String,System.Boolean)">
+        <!-- Badly formed XML comment ignored for member "M:Telerik.Sitefinity.Frontend.Mvc.Helpers.ResourceHelper.Script(System.Web.Mvc.HtmlHelper,System.String,System.String)" -->
+        <member name="M:Telerik.Sitefinity.Frontend.Mvc.Helpers.ResourceHelper.Script(System.Web.Mvc.HtmlHelper,System.String,System.String,System.Boolean,System.Boolean)">
             <summary>
             Registers JavaScript reference and ensures that it loads maximum once for a page.
             </summary>
@@ -3190,6 +3184,8 @@
             <param name="scriptPath">The path to the JavaScript file.</param>
             <param name="sectionName">The name of the section that will render this script. If null it will render on the same place of the page</param>
             <param name="throwException">Indicates whether to throw an exception if the specified section does not exist.</param>
+            <param name="tryUseScriptManager">Indicates whether to use script manager(if exists) when register JavaScript reference. 
+            If it is used the script will always be loaded on the top section of the page.</param>
             <returns>
             MvcHtmlString
             </returns>
@@ -3198,7 +3194,7 @@
             In case you want to use embedded scripts from Sitefinity check <see cref="!:ResourceHelper.Script(this HtmlHelper helper, ScriptRef scriptReference, bool throwException = false)"/>.
             </remarks>
         </member>
-        <member name="M:Telerik.Sitefinity.Frontend.Mvc.Helpers.ResourceHelper.Script(System.Web.Mvc.HtmlHelper,Telerik.Sitefinity.Modules.Pages.ScriptRef)">
+        <member name="M:Telerik.Sitefinity.Frontend.Mvc.Helpers.ResourceHelper.Script(System.Web.Mvc.HtmlHelper,Telerik.Sitefinity.Modules.Pages.ScriptRef,System.Boolean)">
             <summary>
             Registers JavaScript reference and ensures that it loads maximum once for a page.
             </summary>
@@ -3207,25 +3203,14 @@
             </remarks>
             <param name="helper">The helper.</param>
             <param name="scriptReference">The script reference.</param>
+            <param name="tryUseScriptManager">Indicates whether to use script manager(if exists) when register JavaScript reference. 
+            If it is used the script will always be loaded on the top section of the page.</param>
             <returns>
             MvcHtmlString
             </returns>
         </member>
-        <member name="M:Telerik.Sitefinity.Frontend.Mvc.Helpers.ResourceHelper.Script(System.Web.Mvc.HtmlHelper,Telerik.Sitefinity.Modules.Pages.ScriptRef,System.String)">
-            <summary>
-            Registers JavaScript reference and ensures that it loads maximum once for a page.
-            </summary>
-            <remarks>
-            This helper references the same resource existing in Sitefinity.
-            </remarks>
-            <param name="helper">The helper.</param>
-            <param name="scriptReference">The script reference.</param>
-            <param name="sectionName">The name of the section that will render this script. If null it will render on the same place of the page</param>
-            <returns>
-            MvcHtmlString
-            </returns>
-        </member>
-        <member name="M:Telerik.Sitefinity.Frontend.Mvc.Helpers.ResourceHelper.Script(System.Web.Mvc.HtmlHelper,Telerik.Sitefinity.Modules.Pages.ScriptRef,System.String,System.Boolean)">
+        <!-- Badly formed XML comment ignored for member "M:Telerik.Sitefinity.Frontend.Mvc.Helpers.ResourceHelper.Script(System.Web.Mvc.HtmlHelper,Telerik.Sitefinity.Modules.Pages.ScriptRef,System.String)" -->
+        <member name="M:Telerik.Sitefinity.Frontend.Mvc.Helpers.ResourceHelper.Script(System.Web.Mvc.HtmlHelper,Telerik.Sitefinity.Modules.Pages.ScriptRef,System.String,System.Boolean,System.Boolean)">
             <summary>
             Registers JavaScript reference and ensures that it loads maximum once for a page.
             </summary>
@@ -3236,6 +3221,8 @@
             <param name="scriptReference">The script reference.</param>
             <param name="sectionName">The name of the section that will render this script. If null it will render on the same place of the page</param>
             <param name="throwException">Indicates whether to throw an exception if the specified section does not exist.</param>
+            <param name="tryUseScriptManager">Indicates whether to use script manager (if exists) when register JavaScript reference. 
+            If it is used the script will always be loaded on the top section of the page.</param>
             <returns>
             MvcHtmlString
             </returns>

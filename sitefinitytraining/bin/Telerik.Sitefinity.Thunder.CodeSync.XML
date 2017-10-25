@@ -56,22 +56,6 @@
             <param name="newItemsPath"></param>
             <param name="mappedDirectoryPath"></param>
         </member>
-        <member name="M:Telerik.Sitefinity.Thunder.CodeSync.DirectoryExtensions.DirectoryCopy(System.IO.DirectoryInfo,System.String,System.Boolean,System.Boolean)">
-            <summary>
-            Copies all the directory contents in another directory
-            </summary>
-            <param name="sourceDirectoryFullPath"></param>
-            <param name="destinationDirectoryFullPath"></param>
-            <param name="copySubDirs"></param>
-        </member>
-        <member name="M:Telerik.Sitefinity.Thunder.CodeSync.DirectoryExtensions.Move(System.IO.FileSystemInfo,System.String,System.Boolean)">
-            <summary>
-            Moves a directory or a file to another location.
-            </summary>
-            <param name="systemInfo"></param>
-            <param name="destinationPath"></param>
-            <param name="overrideExisting"></param>
-        </member>
         <member name="M:Telerik.Sitefinity.Thunder.CodeSync.FileMappingsManager.GetItemPathInSyncShot(System.String,System.String)">
             <summary>
             Gets the item path as stored into the client sync shot if the item was renamed. Othewise return NULL.
@@ -163,6 +147,22 @@
             <param name="mappingDocument"></param>
             <param name="itemNewRelativePath"></param>
             <param name="itemOldRelativePath"></param>
+        </member>
+        <member name="M:Telerik.Sitefinity.Thunder.CodeSync.DirectoryExtensions.DirectoryCopy(System.IO.DirectoryInfo,System.String,System.Boolean,System.Boolean)">
+            <summary>
+            Copies all the directory contents in another directory
+            </summary>
+            <param name="sourceDirectoryFullPath"></param>
+            <param name="destinationDirectoryFullPath"></param>
+            <param name="copySubDirs"></param>
+        </member>
+        <member name="M:Telerik.Sitefinity.Thunder.CodeSync.DirectoryExtensions.Move(System.IO.FileSystemInfo,System.String,System.Boolean)">
+            <summary>
+            Moves a directory or a file to another location.
+            </summary>
+            <param name="systemInfo"></param>
+            <param name="destinationPath"></param>
+            <param name="overrideExisting"></param>
         </member>
         <member name="T:Telerik.Sitefinity.Thunder.CodeSync.SyncItemToCalculatedSyncItemComparer">
             <summary>

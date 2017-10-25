@@ -171,6 +171,11 @@
             <c>true</c> if should open external page in new tab; otherwise, <c>false</c>.
             </value>
         </member>
+        <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Controllers.NavigationController.OutputCache">
+            <summary>
+            Provides UI for setting navigation output cache variations
+            </summary>
+        </member>
         <member name="P:Telerik.Sitefinity.Frontend.Navigation.Mvc.Controllers.NavigationController.Model">
             <summary>
             Gets the Navigation widget model.
@@ -1205,12 +1210,19 @@
             <param name="site">The site.</param>
             <returns></returns>
         </member>
+        <member name="M:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.SiteSelector.SiteSelectorModel.ResolveSiteHomePage(Telerik.Sitefinity.Multisite.ISite,System.Globalization.CultureInfo)">
+            <summary>
+            Resolves the home page of the site and add the culture to it.
+            </summary>
+            <param name="site">The site.</param>
+            <param name="culture">The site culture.</param>
+            <returns>Homepage URL.</returns>
+        </member>
         <member name="M:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.SiteSelector.SiteSelectorModel.ResolveDefaultSiteUrl(Telerik.Sitefinity.Pages.Model.PageNode,System.Globalization.CultureInfo)">
             <summary>
             Resolves the default site's URL.
             </summary>
             <param name="cultureInfo">The culture info.</param>
-            <param name="siteUrl">The site URL.</param>
             <param name="actualPageNode">The actual page node.</param>
         </member>
         <member name="M:Telerik.Sitefinity.Frontend.Navigation.Mvc.Models.SiteSelector.SiteSelectorModel.GetSiteUrl(Telerik.Sitefinity.Multisite.ISite)">

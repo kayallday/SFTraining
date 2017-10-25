@@ -1011,6 +1011,16 @@
             Non-multilinugal items should ignore this parameter.
             </param>
         </member>
+        <member name="T:Telerik.Sitefinity.IHasIDataItemParent">
+            <summary>
+            This interface should be implemented by every item which is implemented as a child of another item
+            </summary>
+        </member>
+        <member name="P:Telerik.Sitefinity.IHasIDataItemParent.ItemParent">
+            <summary>
+            The item which represents the parent
+            </summary>
+        </member>
         <member name="M:Telerik.Sitefinity.Model.Folder.#ctor">
             <summary>
             Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Model.Folder"/> class.
@@ -12383,16 +12393,6 @@
         <member name="T:Telerik.Sitefinity.Pages.Model.PageNode">
             <summary>
             Node which is used to hold an instance of a page.
-            </summary>
-        </member>
-        <member name="T:Telerik.Sitefinity.IHasIDataItemParent">
-            <summary>
-            This interface should be implemented by every item which is implemented as a child of another item
-            </summary>
-        </member>
-        <member name="P:Telerik.Sitefinity.IHasIDataItemParent.ItemParent">
-            <summary>
-            The item which represents the parent
             </summary>
         </member>
         <member name="M:Telerik.Sitefinity.Pages.Model.PageNode.#ctor">

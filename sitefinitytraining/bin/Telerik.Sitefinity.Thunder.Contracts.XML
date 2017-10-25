@@ -128,8 +128,14 @@
         </member>
         <member name="M:Telerik.Sitefinity.Thunder.Contracts.Azure.AzureSubscriptionData.#ctor">
             <summary>
-            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Thunder.Contracts.Azure.AzureSubscriptionData" /> class.
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Thunder.Contracts.Azure.AzureSubscriptionData"/> class.
             </summary>
+        </member>
+        <member name="M:Telerik.Sitefinity.Thunder.Contracts.Azure.AzureSubscriptionData.ToString">
+            <summary>
+            Returns a string that represents the current object.
+            </summary>
+            <returns>A string that represents the current object.</returns>
         </member>
         <member name="P:Telerik.Sitefinity.Thunder.Contracts.Azure.AzureSubscriptionData.Certificate">
             <summary>
@@ -209,12 +215,6 @@
             </summary>
             <value>The project's physical path.</value>
         </member>
-        <member name="M:Telerik.Sitefinity.Thunder.Contracts.Azure.AzureSubscriptionData.ToString">
-            <summary>
-            Returns a string that represents the current object.
-            </summary>
-            <returns>A string that represents the current object.</returns>
-        </member>
         <member name="P:Telerik.Sitefinity.Thunder.Contracts.Azure.CloudServiceConfiguration.RoleName">
             <summary>
             Gets or sets the name of the role.
@@ -242,7 +242,7 @@
         </member>
         <member name="M:Telerik.Sitefinity.Thunder.Contracts.Azure.ConnectionStringInfo.#ctor(System.String,System.Data.SqlClient.SqlConnectionStringBuilder)">
             <summary>
-            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Thunder.Contracts.Azure.ConnectionStringInfo" /> class.
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Thunder.Contracts.Azure.ConnectionStringInfo"/> class.
             </summary>
             <param name="dbType">Type of the db.</param>
             <param name="builder">The builder.</param>
@@ -301,32 +301,32 @@
             </summary>
             <value>The login secure.</value>
         </member>
-        <member name="P:Telerik.Sitefinity.Thunder.Contracts.Azure.ThunderDbMigrationException.LogFilePath">
-            <summary>
-            Gets or sets the log file path.
-            </summary>
-            <value>The log file path.</value>
-        </member>
         <member name="M:Telerik.Sitefinity.Thunder.Contracts.Azure.ThunderDbMigrationException.#ctor(System.String)">
             <summary>
-            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Thunder.Contracts.Azure.ThunderDbMigrationException" /> class.
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Thunder.Contracts.Azure.ThunderDbMigrationException"/> class.
             </summary>
             <param name="message">The message.</param>
         </member>
         <member name="M:Telerik.Sitefinity.Thunder.Contracts.Azure.ThunderDbMigrationException.#ctor(System.String,System.Exception)">
             <summary>
-            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Thunder.Contracts.Azure.ThunderDbMigrationException" /> class.
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Thunder.Contracts.Azure.ThunderDbMigrationException"/> class.
             </summary>
             <param name="message">The message.</param>
             <param name="innerException">The inner exception.</param>
         </member>
         <member name="M:Telerik.Sitefinity.Thunder.Contracts.Azure.ThunderDbMigrationException.#ctor(System.String,System.Exception,System.String)">
             <summary>
-            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Thunder.Contracts.Azure.ThunderDbMigrationException" /> class.
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Thunder.Contracts.Azure.ThunderDbMigrationException"/> class.
             </summary>
             <param name="message">The message.</param>
             <param name="innerException">The inner exception.</param>
             <param name="logFilePath">The log file path.</param>
+        </member>
+        <member name="P:Telerik.Sitefinity.Thunder.Contracts.Azure.ThunderDbMigrationException.LogFilePath">
+            <summary>
+            Gets or sets the log file path.
+            </summary>
+            <value>The log file path.</value>
         </member>
         <member name="P:Telerik.Sitefinity.Thunder.Contracts.AzureSubscriptionInfo.MaxHostedServices">
             <summary>
@@ -368,22 +368,6 @@
             Gets the color of the command line hover from Thunder Detail Page (VS ScrollBarThumbBackgroundColorKey).
             </summary>
         </member>
-        <member name="P:Telerik.Sitefinity.Thunder.Contracts.IJobCancellationTokenSource.IsCancellationRequested">
-            <summary>
-            Gets whether cancellation has been requested for this <see cref="T:Telerik.Sitefinity.Thunder.Contracts.IJobCancellationTokenSource"/>.
-            </summary>
-            <returns>
-            Whether cancellation has been requested for this <see cref="T:Telerik.Sitefinity.Thunder.Contracts.IJobCancellationTokenSource"/>.
-            </returns>
-        </member>
-        <member name="P:Telerik.Sitefinity.Thunder.Contracts.IJobCancellationTokenSource.CanBeCanceled">
-            <summary>
-            Gets whether this token is capable of being in the canceled state.
-            </summary>
-            <returns>
-            true if this token is capable of being in the canceled state; otherwise false.
-            </returns>
-        </member>
         <member name="M:Telerik.Sitefinity.Thunder.Contracts.IJobCancellationTokenSource.Cancel">
             <summary>
             Communicates a request for cancellation.
@@ -405,6 +389,28 @@
             <exception cref="T:System.ObjectDisposedException">
             The associated <see cref="T:System.Threading.CancellationTokenSource"/> has been disposed.
             </exception>
+        </member>
+        <member name="P:Telerik.Sitefinity.Thunder.Contracts.IJobCancellationTokenSource.IsCancellationRequested">
+            <summary>
+            Gets whether cancellation has been requested for this <see cref="T:Telerik.Sitefinity.Thunder.Contracts.IJobCancellationTokenSource"/>.
+            </summary>
+            <returns>
+            Whether cancellation has been requested for this <see cref="T:Telerik.Sitefinity.Thunder.Contracts.IJobCancellationTokenSource"/>.
+            </returns>
+        </member>
+        <member name="P:Telerik.Sitefinity.Thunder.Contracts.IJobCancellationTokenSource.CanBeCanceled">
+            <summary>
+            Gets whether this token is capable of being in the canceled state.
+            </summary>
+            <returns>
+            true if this token is capable of being in the canceled state; otherwise false.
+            </returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Thunder.Contracts.INotifyProgressChanged.IncrementProgressCounter(System.Int32)">
+            <summary>
+            Increments the progress counter.
+            </summary>
+            <param name="increment">The increment.</param>
         </member>
         <member name="P:Telerik.Sitefinity.Thunder.Contracts.INotifyProgressChanged.Maximum">
             <summary>
@@ -430,17 +436,17 @@
             </summary>
             <value>The cancellation token source.</value>
         </member>
-        <member name="M:Telerik.Sitefinity.Thunder.Contracts.INotifyProgressChanged.IncrementProgressCounter(System.Int32)">
-            <summary>
-            Increments the progress counter.
-            </summary>
-            <param name="increment">The increment.</param>
-        </member>
         <member name="P:Telerik.Sitefinity.Thunder.Contracts.INotifyProgressChanged.Status">
             <summary>
             Gets or sets the progress status.
             </summary>
             <value>The progress status.</value>
+        </member>
+        <member name="M:Telerik.Sitefinity.Thunder.Contracts.Modules.ContentField.Clone">
+            <summary>
+            Makes a deep clone of the instance.
+            </summary>
+            <returns></returns>
         </member>
         <member name="P:Telerik.Sitefinity.Thunder.Contracts.Modules.ContentField.Name">
             <summary>
@@ -483,12 +489,6 @@
             Gets or sets whether this field is the content type's main field.
             </summary>
             <value>The is main field.</value>
-        </member>
-        <member name="M:Telerik.Sitefinity.Thunder.Contracts.Modules.ContentField.Clone">
-            <summary>
-            Makes a deep clone of the instance.
-            </summary>
-            <returns></returns>
         </member>
         <member name="P:Telerik.Sitefinity.Thunder.Contracts.SitefinityVirtualPath.ResourceLocation">
             <summary>
@@ -599,7 +599,7 @@
         </member>
         <member name="M:Telerik.Sitefinity.Thunder.Contracts.DtoDateTime.#ctor(System.DateTime)">
             <summary>
-            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Thunder.Contracts.DtoDateTime" /> class.
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Thunder.Contracts.DtoDateTime"/> class.
             </summary>
             <param name="datetime">The datetime.</param>
         </member>
@@ -622,7 +622,7 @@
         </member>
         <member name="M:Telerik.Sitefinity.Thunder.Contracts.SitefinitySystemInfo.#ctor">
             <summary>
-            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Thunder.Contracts.SitefinitySystemInfo" /> class.
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Thunder.Contracts.SitefinitySystemInfo"/> class.
             </summary>
         </member>
         <member name="P:Telerik.Sitefinity.Thunder.Contracts.SitefinitySystemInfo.AuthenticationMode">
@@ -722,6 +722,18 @@
             present only because it is a requirement of Telerik OpenAccess ORM.
             </summary>
         </member>
+        <member name="M:Telerik.Sitefinity.Thunder.Contracts.ThunderDynamicModuleType.CreateEmpty">
+            <summary>
+            Creates an empty ThunderDynamicModuleType.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Telerik.Sitefinity.Thunder.Contracts.ThunderDynamicModuleType.Clone">
+            <summary>
+            Creates a new object that is a copy of the current instance.
+            </summary>
+            <returns>A new object that is a copy of this instance.</returns>
+        </member>
         <member name="P:Telerik.Sitefinity.Thunder.Contracts.ThunderDynamicModuleType.DisplayName">
             <summary>
             Gets or sets the display name of the module type.
@@ -756,21 +768,9 @@
             This field will be used to generate public URLs for the custom content types.
             </summary>
         </member>
-        <member name="M:Telerik.Sitefinity.Thunder.Contracts.ThunderDynamicModuleType.CreateEmpty">
-            <summary>
-            Creates an empty ThunderDynamicModuleType.
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:Telerik.Sitefinity.Thunder.Contracts.ThunderDynamicModuleType.Clone">
-            <summary>
-            Creates a new object that is a copy of the current instance.
-            </summary>
-            <returns>A new object that is a copy of this instance.</returns>
-        </member>
         <member name="M:Telerik.Sitefinity.Thunder.Contracts.ThunderException.#ctor(System.Exception)">
             <summary>
-            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Thunder.Contracts.ThunderException" /> class.
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Thunder.Contracts.ThunderException"/> class.
             </summary>
             <param name="ex">The ex.</param>
         </member>
@@ -794,7 +794,7 @@
         </member>
         <member name="M:Telerik.Sitefinity.Thunder.Contracts.WidgetTemplate.#ctor">
             <summary>
-            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Thunder.Contracts.WidgetTemplate" /> class.
+            Initializes a new instance of the <see cref="T:Telerik.Sitefinity.Thunder.Contracts.WidgetTemplate"/> class.
             </summary>
         </member>
         <member name="P:Telerik.Sitefinity.Thunder.Contracts.WidgetTemplate.Id">
