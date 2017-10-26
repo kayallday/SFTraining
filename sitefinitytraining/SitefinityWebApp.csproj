@@ -918,12 +918,23 @@
     <Content Include="App_Data\RadSpell\fr-FR.tdf" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\Sitefinity\" />
+    <Folder Include="App_Data\Sitefinity\Temp\Libraries\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App_Data\GeoLocation\GeoLiteCity.dat" />
     <Content Include="OpenAccessNuGet.targets" />
     <Content Include="Mvc\Views\Compliments\Index.cshtml" />
+    <Content Include="App_Data\Sitefinity\Configuration\AuthenticationConfig.config" />
+    <Content Include="App_Data\Sitefinity\Configuration\DataConfig.config" />
+    <Content Include="App_Data\Sitefinity\Configuration\PersonalizationConfig.config" />
+    <Content Include="App_Data\Sitefinity\Configuration\ProjectConfig.config" />
+    <Content Include="App_Data\Sitefinity\Configuration\SecurityConfig.config" />
+    <Content Include="App_Data\Sitefinity\Logs\Error.2017-10-26.1.log" />
+    <Content Include="App_Data\Sitefinity\Logs\Error.log" />
+    <Content Include="App_Data\Sitefinity\Logs\Trace.2017-10-26.1.log" />
+    <Content Include="App_Data\Sitefinity\Logs\Trace.log" />
+    <Content Include="App_Data\Sitefinity\Logs\UpgradeTrace.2017-10-26.1.log" />
+    <Content Include="App_Data\Sitefinity\Logs\UpgradeTrace.log" />
     <None Include="packages.config" />
     <Content Include="SampleTemplate.cshtml">
       <Generator>RazorGenerator</Generator>
