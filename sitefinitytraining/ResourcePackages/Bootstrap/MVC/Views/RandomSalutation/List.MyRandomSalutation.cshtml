@@ -1,0 +1,31 @@
+﻿@model Telerik.Sitefinity.Frontend.DynamicContent.Mvc.Models.DynamicContentListViewModel
+
+@using Telerik.Sitefinity.Frontend.DynamicContent.WidgetTemplates.Fields.Helpers;
+@using Telerik.Sitefinity;
+@using Telerik.Sitefinity.Data.ContentLinks;
+@using Telerik.Sitefinity.Frontend.Mvc.Helpers;
+@using Telerik.Sitefinity.Frontend.Mvc.Models;
+@using Telerik.Sitefinity.Web.DataResolving;
+@using Telerik.Sitefinity.Model.ContentLinks;
+@using Telerik.Sitefinity.Modules.Pages;
+
+@Html.Script(ScriptRef.JQuery, "top", false)
+@*@Model.Item.Fields.Words*@
+<div class="@Model.CssClass">
+
+    @foreach (var item in Model.Items)
+    {
+
+        string wordsString = item.Fields.Words.ToString();
+        var wordArray = wordsString.Split(',');
+        Random rnd = new Random();
+        int r = rnd.Next(wordArray.Count());
+
+        var theWord = wordArray[r];
+
+
+        <h1> @theWord </h1>
+    }
+
+
+</div> 
